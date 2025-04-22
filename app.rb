@@ -23,3 +23,8 @@ get("/:first_symbol") do
 
 erb(:step_one)
 end
+
+get("/:first_symbol/:second_symbol") do
+  @first_symbol = params.fetch("first_symbol")
+  @second_symbol = params.fetch("second_symbol")
+end
