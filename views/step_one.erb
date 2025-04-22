@@ -1,0 +1,12 @@
+<h1> Covert <%= @symbol %> </h1>
+
+<p>Go <a href="/">back</a>.</p>
+
+<ul>
+<% @currencies.keys.each do | symbol2 | %>
+<li>
+ <a href="/<%= @symbol %>/<%= symbol2 %>"> Convert 1 <%= @symbol %> to <%= symbol2 %>  ... 
+</li>
+<% end %>
+</ul>
+  </a>
